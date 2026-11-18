@@ -1,0 +1,125 @@
+/* CSS EKSTERNAL - HALAMAN PROYEK PORTOFOLIO ALMIRA */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fdf4ff;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #c026d3, #7e22ce);
+  color: white;
+  padding: 0 7%;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  min-height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand { color: white; text-decoration: none; font-weight: bold; font-size: 18px; }
+.back-link {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.back-link:hover { background: rgba(255, 255, 255, 0.35); }
+
+.hero { max-width: 850px; margin: auto; text-align: center; padding: 55px 15px 65px; }
+.eyebrow {
+  display: inline-block;
+  color: #f5d0fe;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.hero h1 { margin: 0 0 14px; font-size: clamp(28px, 5vw, 44px); line-height: 1.15; }
+.hero p { max-width: 650px; margin: auto; color: #fae8ff; font-size: 16px; }
+
+.container { width: min(1000px, 90%); margin: 0 auto; }
+
+/* Styling Foto & Detail Proyek Utama */
+.project-detail-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  margin: -35px auto 40px;
+  position: relative;
+}
+
+.project-image-box {
+  width: 100%;
+  background: #f8fafc;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.project-image-box img {
+  max-width: 100%;
+  max-height: 460px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.project-body { padding: 30px; }
+.project-body h2 { margin-top: 0; color: #0f172a; font-size: 24px; }
+.project-body p { color: #475569; font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; padding: 15px 0 45px; }
+.project-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, .07);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(15, 23, 42, .12); }
+
+.project-content { padding: 21px; }
+.category { color: #c026d3; font-size: 11px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+.project-content h3 { margin: 7px 0; color: #0f172a; font-size: 20px; }
+.project-content p { color: #64748b; font-size: 14px; margin: 0 0 15px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 15px; }
+.tags span { background: #fae8ff; color: #a21caf; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+
+.note { background: #fae8ff; border-radius: 15px; padding: 25px; text-align: center; margin: 10px 0 45px; }
+.note h2 { margin: 0 0 8px; color: #86198f; font-size: 20px; }
+.note p { color: #475569; margin: 0; }
+
+.footer { background: #1e293b; color: #cbd5e1; text-align: center; padding: 25px 15px; font-size: 13px; }
+.footer p { margin: 0 0 7px; }
+.footer a { color: #f0abfc; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+@media (max-width: 650px) {
+  .site-header { padding: 0 5%; }
+  .navbar { min-height: 65px; }
+  .brand { font-size: 15px; }
+  .back-link { font-size: 12px; padding: 6px 10px; }
+  .hero { padding: 40px 5px 55px; }
+  .hero p { font-size: 14px; }
+  .container { width: 92%; }
+  .project-grid { grid-template-columns: 1fr; gap: 17px; }
+  .project-body { padding: 20px; }
+}
